@@ -1,0 +1,43 @@
+.header-row {
+    margin-top: 1.5em;
+    height: 100%;
+}
+
+.img-circleborder {
+    border: solid 12px #30C0B0;
+}
+
+#bio {
+    padding: 1em 2em;
+    font-family: 'PT Sans Narrow', 'sans-serif';
+}
+
+@media only screen and (min-width: 1280px) {
+    #social_links {
+        padding: 1em;
+        right: 1.5em;
+    }
+}
+
+.social-link {
+    border: 2px solid #30C0B0;
+    border-radius: 50%;
+}
+
+.teal-jumbo {
+    background-color: #add;
+    border-radius: 6px;
+}
+
+.social-row {
+    margin-top: 2.5em;
+}
+
+.teal-social {
+    border-radius: 50%;
+    background-color: #add;
+}
+
+.portfolio-item {
+    margin-top: .5em;
+}
