@@ -162,21 +162,23 @@
 
   <div class="row">
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 graphic-design-item">
       <a href="#" data-toggle="modal" data-target="#dcfemtech-tourdecode"><img src="images/dcfemtech_tourdecode_final.png" height="263" width="170" class="img-responsive hcenter"> </a>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 graphic-design-item">
       <a href="#" data-toggle="modal" data-target="#cfphmc-promo2"> <img src="images/cfp_hmc_hacknights_twitter.png" style="border: 1px solid black;" class="img-responsive hcenter"></a>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 graphic-design-item">
       <a href="#" data-toggle="modal" data-target="#cfphmc-promo1"><img src="images/cfp_hmc_hacknights.png" height="263" width="203" style="border: 1px solid black;" class="img-responsive hcenter"> </a>
     </div>
 
   </div>
 
-  <div class="row text-center">
+  <!-- Hide captions on everything except the largest screens (>=1200px) -->
+  <!-- Otherwise, the captions don't line up under the images -->
+  <div class="row text-center visible-lg">
 
     <div class="col-lg-4">
       <b> DC Fem Tech Tour de Code Kickoff Poster </b>
@@ -198,7 +200,7 @@
       <!-- Nothing here yet -->
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 graphic-design-item">
       <a href="#" data-toggle="modal" data-target="#iamhmc-promos"><img src="images/iamhmc/0.png" class="img-responsive hcenter"> </a>
     </div>
 
@@ -208,7 +210,9 @@
 
   </div>
 
-  <div class="row">
+  <!-- Hide captions on everything except the largest screens (>=1200px) -->
+  <!-- Otherwise, the captions don't line up under the images -->
+  <div class="row text-center visible-lg">
 
     <div class="col-lg-4">
       <!-- Nothing here yet -->
@@ -233,8 +237,6 @@
 </div>
 </div>
 
-
-
 <!-- Modals for graphic design section, etc -->
 
 <div class="modal fade modal-maxheight" id="dcfemtech-tourdecode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -246,7 +248,7 @@
       </div>
       <div class="modal-body text-center">
         <p>
-          <img src="images/dcfemtech_tourdecode_final.png" class="modal-image">
+          <img src="images/dcfemtech_tourdecode_final.png" class="modal-image img-responsive">
           <h4>Made in Adobe Illustrator</h4>
         </p>
       </div>
@@ -263,7 +265,7 @@
       </div>
       <div class="modal-body text-center">
         <p>
-          <img src="images/cfp_hmc_hacknights.png" class="modal-image" style="border: 1px solid black;">
+          <img src="images/cfp_hmc_hacknights.png" class="modal-image img-responsive" style="border: 1px solid black;">
           <h4>Made in Adobe Illustrator</h4>
         </p>
       </div>
@@ -280,7 +282,7 @@
       </div>
       <div class="modal-body text-center">
         <p>
-          <img src="images/cfp_hmc_hacknights_twitter.png" class="modal-image" style="border: 1px solid black;">
+          <img src="images/cfp_hmc_hacknights_twitter.png" class="modal-image img-responsive" style="border: 1px solid black;">
           <h4>Made in Adobe Illustrator</h4>
         </p>
       </div>
@@ -298,7 +300,7 @@
       <div class="modal-body text-center">
         <button id="prev-iamhmc" class="img-slider img-prev">&lt;</button>
         <p>
-          <img id="iamhmc-promoimage" src="images/iamhmc/0.png" class="modal-image" style="border: 1px solid black;">
+          <img id="iamhmc-promoimage" src="images/iamhmc/0.png" class="modal-image img-responsive">
           <h4>Made in Adobe Illustrator</h4>
         </p>
         <button id="next-iamhmc" class="img-slider img-next">&gt;</button>
