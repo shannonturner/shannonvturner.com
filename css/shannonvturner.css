@@ -41,3 +41,50 @@
 .portfolio-item {
     margin-top: .5em;
 }
+
+.modal-dialog {
+    width: 80%;
+}
+
+.small-text {
+    font-size: 60%;
+}
+
+.footer {
+    margin: 1.5em;
+}
+
+.modal-maxheight {
+    max-height: 90%;
+}
+
+.hcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-slider {
+    position: absolute;
+    top: 20%;
+    width: 1.5em;
+    height: 60%;
+    background: #30C0B0;
+    color: #fff;
+    font-size: 24pt;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 5em;
+}
+
+.img-prev {
+    left: 0px;
+}
+
+.img-next {
+    right: 0px;
+}
+
+.graphic-design-row {
+    margin-top: 3em;
+}
