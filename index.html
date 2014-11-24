@@ -142,6 +142,12 @@
   </a>
 </div>
 
+<div class="portfolio-item col-lg-12">
+  <a href="http://rootscamp.neworganizing.com/en-us/" target="_blank">
+    <img src="images/rootscamp.png" class="img-responsive" alt="Rootscamp, an annual unconference for progressive organizers" title="Rootscamp, an annual unconference for progressive organizers">
+  </a>
+</div>
+
 </div>
 
 <div class="row col-lg-12 text-center">
@@ -163,15 +169,15 @@
   <div class="row">
 
     <div class="col-lg-4 graphic-design-item">
-      <a href="#" data-toggle="modal" data-target="#dcfemtech-tourdecode"><img src="images/dcfemtech_tourdecode_final.png" height="263" width="170" class="img-responsive hcenter"> </a>
+      <a href="#" data-toggle="modal" data-target="#dcfemtech-tourdecode"><img src="images/dcfemtech_tourdecode_final.png" height="263" width="170" class="img-responsive hcenter" alt="DC Fem Tech Tour de Code Kickoff Poster" title="DC Fem Tech Tour De Code Kickoff Poster"> </a>
     </div>
 
     <div class="col-lg-4 graphic-design-item">
-      <a href="#" data-toggle="modal" data-target="#cfphmc-promo2"> <img src="images/cfp_hmc_hacknights_twitter.png" style="border: 1px solid black;" class="img-responsive hcenter"></a>
+      <a href="#" data-toggle="modal" data-target="#cfphmc-promo2"> <img src="images/cfp_hmc_hacknights_twitter.png" style="border: 1px solid black;" class="img-responsive hcenter" alt="Code for Progress &amp; Hear Me Code Playtime Shareable Twitter Promos" title="Code for Progress &amp; Hear Me Code Playtime Shareable Twitter Promos"></a>
     </div>
 
     <div class="col-lg-4 graphic-design-item">
-      <a href="#" data-toggle="modal" data-target="#cfphmc-promo1"><img src="images/cfp_hmc_hacknights.png" height="263" width="203" style="border: 1px solid black;" class="img-responsive hcenter"> </a>
+      <a href="#" data-toggle="modal" data-target="#cfphmc-promo1"><img src="images/cfp_hmc_hacknights.png" height="263" width="203" style="border: 1px solid black;" class="img-responsive hcenter" alt="Code for Progress &amp; Hear Me Code Playtime Promotionals" title="Code for Progress &amp; Hear Me Code Playtime Promotionals"> </a>
     </div>
 
   </div>
@@ -201,7 +207,7 @@
     </div>
 
     <div class="col-lg-4 graphic-design-item">
-      <a href="#" data-toggle="modal" data-target="#iamhmc-promos"><img src="images/iamhmc/0.png" class="img-responsive hcenter"> </a>
+      <a href="#" data-toggle="modal" data-target="#iamhmc-promos"><img src="images/iamhmc/0.png" class="img-responsive hcenter" alt="I am __________, Hear Me Code! Shareable Twitter Promos" title="I am __________, Hear Me Code! Shareable Twitter Promos"> </a>
     </div>
 
     <div class="col-lg-4">
@@ -248,7 +254,7 @@
       </div>
       <div class="modal-body text-center">
         <p>
-          <img src="images/dcfemtech_tourdecode_final.png" class="modal-image img-responsive">
+          <img src="images/dcfemtech_tourdecode_final.png" class="modal-image img-responsive" alt="DC Fem Tech Tour de Code Kickoff Poster" title="DC Fem Tech Tour de Code Kickoff Poster">
           <h4>Made in Adobe Illustrator</h4>
         </p>
       </div>
@@ -265,7 +271,7 @@
       </div>
       <div class="modal-body text-center">
         <p>
-          <img src="images/cfp_hmc_hacknights.png" class="modal-image img-responsive" style="border: 1px solid black;">
+          <img src="images/cfp_hmc_hacknights.png" class="modal-image img-responsive" style="border: 1px solid black;" alt="Code for Progress &amp; Hear Me Code Playtime Promotionals" title="Code for Progress &amp; Hear Me Code Playtime Promotionals">
           <h4>Made in Adobe Illustrator</h4>
         </p>
       </div>
@@ -282,7 +288,7 @@
       </div>
       <div class="modal-body text-center">
         <p>
-          <img src="images/cfp_hmc_hacknights_twitter.png" class="modal-image img-responsive" style="border: 1px solid black;">
+          <img src="images/cfp_hmc_hacknights_twitter.png" class="modal-image img-responsive" style="border: 1px solid black;" alt="Code for Progress &amp; Hear Me Code Playtime Shareable Twitter Promos" title="Code for Progress &amp; Hear Me Code Playtime Shareable Twitter Promos">
           <h4>Made in Adobe Illustrator</h4>
         </p>
       </div>
@@ -300,7 +306,7 @@
       <div class="modal-body text-center">
         <button id="prev-iamhmc" class="img-slider img-prev">&lt;</button>
         <p>
-          <img id="iamhmc-promoimage" src="images/iamhmc/0.png" class="modal-image img-responsive">
+          <img id="iamhmc-promoimage" src="images/iamhmc/0.png" class="modal-image img-responsive" alt="I am __________, Hear Me Code! Shareable Twitter Promos" title="I am __________, Hear Me Code! Shareable Twitter Promos">
           <h4>Made in Adobe Illustrator</h4>
         </p>
         <button id="next-iamhmc" class="img-slider img-next">&gt;</button>
@@ -321,8 +327,11 @@
     $(document).ready(function() {
 
       // Scroll through all images in #iamhmc-promos
-      var imageSlider = function (imageNum) {
-        imagePath = "images/iamhmc/" + String(imageNum) + ".png";
+      // To add more images to the rotation, just add them on the server.
+      // No code change is necessary.
+      // This can be used for multiple separate slideshows by specifying the folder parameter (which is the subfolder of images/)
+      var imageSlider = function (imageNum, folder) {
+        imagePath = "images/" + folder + "/" + String(imageNum) + ".png";
         $("#iamhmc-promoimage").attr("src", imagePath);
         $("#iamhmc-promoimage").attr("src", imagePath).error(function() {
             // If you go past the end, loop back around to the first image.
@@ -342,7 +351,7 @@
           $("#prev-iamhmc").hide();
         }
         $("#next-iamhmc").show();
-        imageSlider(current);
+        imageSlider(current, "iamhmc");
       });
 
       $("#next-iamhmc").click(function() {
@@ -350,7 +359,7 @@
         if (current > 0) {
           $("#prev-iamhmc").show();
         }
-        imageSlider(current);
+        imageSlider(current, "iamhmc");
       });
 
       // Listen for left and right arrow button keys; do previous / next accordingly
