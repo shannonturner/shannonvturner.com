@@ -1,6 +1,32 @@
+* {
+    font-family: 'PT Sans Narrow', 'sans-serif';
+}
+
 .header-row {
     margin-top: 1.5em;
     height: 100%;
+}
+
+.projects-row {
+    padding: 2em;
+}
+
+.awards-etc-row {
+    padding: 1em;
+}
+
+.links-row {
+    margin-top: 2.5em;
+}
+
+.teal-line {
+    /*border-color: #add;*/
+    border-color: #30C0B0;
+    width: 80%;
+}
+
+.thin {
+    font-weight: 300;
 }
 
 .img-circleborder {
@@ -9,6 +35,9 @@
 
 #bio {
     padding: 1em 2em;
+}
+
+.heading {
     font-family: 'PT Sans Narrow', 'sans-serif';
 }
 
@@ -38,10 +67,6 @@
     background-color: #add;
 }
 
-.portfolio-item {
-    margin-top: .5em;
-}
-
 .modal-dialog {
     width: 80%;
 }
@@ -51,7 +76,9 @@
 }
 
 .footer {
-    margin: 1.5em;
+    background: #add;
+    color: black;
+    margin-bottom: 1.5em;
 }
 
 .modal-maxheight {
