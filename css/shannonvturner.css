@@ -32,6 +32,7 @@
 .headshot {
     max-width: 225px;
     height: auto;
+    width: 100%;
 }
 
 #bio {
@@ -75,4 +76,12 @@
     background: #add;
     color: black;
     margin-bottom: 1.5em;
+}
+
+.portfolio-item a img {
+    margin: auto;
+}
+
+.portfolio-item h4 {
+    margin-bottom: 25px;
 }
