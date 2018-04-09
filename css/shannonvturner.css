@@ -1,5 +1,6 @@
 * {
     font-family: 'PT Sans Narrow', 'sans-serif';
+    letter-spacing: 0.25px;
 }
 
 .header-row {
@@ -16,7 +17,6 @@
 }
 
 .teal-line {
-    /*border-color: #add;*/
     border-color: #30C0B0;
     width: 80%;
 }
@@ -37,6 +37,10 @@
 
 #bio {
     padding: 1em 2em;
+}
+
+#bio h3 {
+    padding-top: 10px;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -60,6 +64,29 @@
     .teal-jumbo {
         padding-left: 0px !important;
         padding-right: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .links-row a:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .links-row a {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .heading {
+        margin-bottom: 15px;
+    }
+    .portfolio-item {
+        margin: 20px 10px;
+    }
+    div.col-sm-9 div.row {
+        margin-top: -10px;
     }
 }
 
