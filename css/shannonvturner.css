@@ -78,6 +78,13 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .portfolio-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .heading {
         margin-bottom: 15px;
@@ -88,8 +95,8 @@
     div.col-sm-9 div.row {
         margin-top: -10px;
     }
-    .links-row {
-        font-size: 20px;
+    .links-row a {
+        margin: 3px;
     }
 }
 
@@ -118,4 +125,14 @@
 
 ul.resume-items li {
     font-size: 133%;
+}
+
+.heading h2 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 36px;
+}
+
+.respect {
+    font-family: 'Slabo 27px', serif;
+    margin-bottom: 30px;
 }
